@@ -1,0 +1,16 @@
+h3 {
+  display: inline;
+}
+
+.title{
+    text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+.subtitle-a{
+    text-align: center;
+    color: #B33030;
+}
