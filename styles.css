@@ -19,6 +19,7 @@ header {
   background-color: #21252b;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 nav button {
   margin: 10px;
