@@ -1,0 +1,89 @@
+
+/* File: styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  color: #abb2bf;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+header {
+  background-color: #21252b;
+  padding: 20px;
+  border-radius: 10px;
+}
+nav button {
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #61afef;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+nav button:hover {
+  background-color: #528bff;
+}
+section {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #21252b;
+  border-radius: 10px;
+}
+section h2 {
+  color: #e06c75;
+}
+#repo-list {
+  list-style: none;
+  padding: 0;
+}
+#repo-list li {
+  margin-bottom: 15px;
+  background-color: #3e4451;
+  padding: 15px;
+  border-radius: 8px;
+}
+#repo-list li a {
+  color: #61afef;
+  font-weight: bold;
+  text-decoration: none;
+}
+#repo-list li p {
+  margin: 5px 0 0;
+  color: #98c379;
+}
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.social-buttons .btn {
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #98c379;
+  color: #282c34;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.social-buttons .btn:hover {
+  background-color: #7ec07e;
+}
+footer {
+  background: #21252b;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #5c6370;
+}
