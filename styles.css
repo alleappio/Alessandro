@@ -21,9 +21,23 @@ header {
   border-radius: 10px;
   text-align: center;
 }
+.top-bar {
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  height: 5%;
+  top: 0;
+  /*left: 5%;*/
+  border-radius: 5px;
+  background-color: #21252b;
+}
+.top-bar-nav{
+  position: sticky;
+  padding-right: 5%;
+}
 nav button {
   margin: 10px;
-  padding: 10px 15px;
+  padding: 5px 15px;
   cursor: pointer;
   background-color: #61afef;
   color: #282c34;
@@ -83,6 +97,13 @@ section h3 {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.2s;
+  text-align: center;
+}
+.icon-button {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  /*margin-right: 0.5em;*/
 }
 .social-buttons .btn:hover {
   background-color: #7ec07e;
