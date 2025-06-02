@@ -68,7 +68,7 @@ section h3 {
 }
 @media (max-width: 600px) {
   .card_container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .repo-card {
