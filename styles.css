@@ -62,7 +62,7 @@ section h3 {
 }
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
   gap: 15px;
 }
