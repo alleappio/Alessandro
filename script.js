@@ -10,7 +10,8 @@ fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
 
       const a = document.createElement('a');
       a.href = repo.html_url;
-      a.textContent = repo.name;
+      let title = repo.name.replaceAll("_", " ");
+      a.textContent = title;
       a.target = '_blank';
       card.appendChild(a);
 
