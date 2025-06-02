@@ -27,8 +27,7 @@ header {
   top: 0;
   /*left: 5%;*/
   border-radius: 5px;
-  background-color: #21252b;
-  opacity: 0.5;
+  background-color: #21252b8F;
 }
 .top-bar-nav {
   position: sticky;
@@ -44,6 +43,7 @@ nav button {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.2s;
+  opacity: 1;
 }
 nav button:hover {
   background-color: #528bff;
