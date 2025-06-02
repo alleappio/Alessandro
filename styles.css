@@ -66,11 +66,6 @@ section h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
 }
-@media (max-width: 600px) {
-  .card_container {
-    grid-template-columns: 1fr;
-  }
-}
 .repo-card {
   background-color: #3e4451;
   padding: 15px;
