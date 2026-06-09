@@ -1,10 +1,38 @@
+:root {
+/* oxocarbon */
+  --background: #1b1b1b;
+  --foreground: #ffffff;
+
+  --text: #161616; 
+  --cursor: #78a9ff;
+
+  --black  : #161616;
+  --red    : #ee5396;
+  --green  : #42be65;
+  --yellow : #ff7eb6;
+  --blue   : #33b1ff;
+  --magenta: #be95ff;
+  --cyan   : #3ddbd9;   
+  --white  : #ffffff;  
+
+  --bright-black  : #525252;
+  --bright-red    : #ee5396;
+  --bright-green  : #42be65;
+  --bright-yellow : #ff7eb6;
+  --bright-blue   : #33b1ff;
+  --bright-magenta: #be95ff;
+  --bright-cyan   : #3ddbd9;   
+  --bright-white  : #ffffff;  
+
+  --black-transparent  : #16161620;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
   padding: 0;
-  background-color: #282c34;
-  color: #abb2bf;
+  background-color: var(--background);
+  color: var(--foreground);
   scroll-behavior: smooth;
 }
 .container {
@@ -13,21 +41,28 @@ body {
   padding: 20px;
   margin: 0 auto;
 }
+
 header {
-  background-color: #21252b;
+  background-color: var(--black);
+  color: var(--foreground);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+header h1{
+  color: var(--red);
 }
 .top-bar {
   position: sticky;
   text-align: right;
   /*width: 100%;*/
-  height: 5%;
+  /* height: 5%; */
   top: 0;
   /*left: 5%;*/
   border-radius: 5px;
-  background-color: #21252b8F;
+  background-color: var(--black-transparent);
 }
 .top-bar-nav {
   position: sticky;
@@ -37,8 +72,8 @@ nav button {
   margin: 10px;
   padding: 5px 15px;
   cursor: pointer;
-  background-color: #61afef;
-  color: #282c34;
+  background-color: var(--blue);
+  color: var(--background);
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -46,20 +81,26 @@ nav button {
   opacity: 1;
 }
 nav button:hover {
-  background-color: #528bff;
+  background-color: var(--bright-blue);
 }
 section {
   padding: 20px;
   margin-top: 20px;
-  background-color: #21252b;
-  border-radius: 10px;
+  background-color: var(--black);
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 section h2 {
-  color: #e06c75;
+  color: var(--red);
 }
 section h3 {
-  color: #98c379;
+  color: var(--green);
 }
+section h4 {
+  color: var(--blue);
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -73,13 +114,21 @@ section h3 {
   }
 }
 .repo-card {
-  background-color: #3e4451;
+  background-color: var(--black);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-sizing: border-box;
+  transition: background-color 200ms ease-in-out, transform 200ms ease;
+  will-change: background-color, transform;
 }
+
+.repo-card:hover {
+  background-color: var(--background);
+  transform: translateY(-3px);
+}
+
 .repo-card a {
-  color: #61afef;
+  color: var(--blue);
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -93,12 +142,14 @@ section h3 {
   gap: 15px;
   flex-wrap: wrap;
   margin-top: 10px;
+  transition: background-color 200ms ease-in-out, transform 200ms ease;
+  will-change: background-color;
 }
 .social-buttons .btn {
   padding: 10px 15px;
   text-decoration: none;
-  background-color: #98c379;
-  color: #282c34;
+  background-color: var(--green);
+  color: var(--background);
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.2s;
@@ -111,15 +162,15 @@ section h3 {
   /*margin-right: 0.5em;*/
 }
 .social-buttons .btn:hover {
-  background-color: #7ec07e;
+  background-color: var(--bright-green);
 }
 footer {
-  background: #21252b;
+  background: var(--bbackground);
   text-align: center;
   padding: 10px;
   margin-top: 20px;
-  border-radius: 10px;
-  color: #5c6370;
+  border-radius: 5px;
+  color: var(--foreground);
 }
 
 
