@@ -1,28 +1,28 @@
 :root {
 /* oxocarbon */
-  --background: #1b1b1b;
-  --foreground: #ffffff;
+  --background: #1d2021;
+  --foreground: #ebdbb2;
 
-  --text: #161616; 
-  --cursor: #78a9ff;
+  --text: #282828;
+  --cursor: #458588;
 
-  --black  : #161616;
-  --red    : #ee5396;
-  --green  : #42be65;
-  --yellow : #ff7eb6;
-  --blue   : #33b1ff;
-  --magenta: #be95ff;
-  --cyan   : #3ddbd9;   
-  --white  : #ffffff;  
+  --black  : #282828;
+  --red    : #cc241d;
+  --green  : #98971a;
+  --yellow : #d79921;
+  --blue   : #458588;
+  --magenta: #b16286;
+  --cyan   : #689d6a;
+  --white  : #ebdbb2;
 
-  --bright-black  : #525252;
-  --bright-red    : #ee5396;
-  --bright-green  : #42be65;
-  --bright-yellow : #ff7eb6;
-  --bright-blue   : #33b1ff;
-  --bright-magenta: #be95ff;
-  --bright-cyan   : #3ddbd9;   
-  --bright-white  : #ffffff;  
+  --bright-black  : #504945;
+  --bright-red    : #fb4934;
+  --bright-green  : #b8bb26;
+  --bright-yellow : #fabd2f;
+  --bright-blue   : #83a598;
+  --bright-magenta: #d3869b;
+  --bright-cyan   : #8ec07c;
+  --bright-white  : #fbf1c7;
 
   --black-transparent  : #16161620;
 }
